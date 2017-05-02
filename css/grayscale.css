@@ -63,14 +63,14 @@ a:focus {
   font-weight: 400;
 }
 .navbar-custom {
-  margin-bottom: 0;
+  
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: white;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: black;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
 }
@@ -133,19 +133,17 @@ a:focus {
 
 @media screen and (max-width:991px) {
     .templatemo-box {
-    margin-bottom: 30px;
+   
 }
 #pricing .active {
     bottom: 0;
 }
 .pricing {
-    margin-bottom: 20px;
+  
 }
-#download img, #feature img {
-    margin-top: 30px;
-}
+
 #feature1 img {
-    margin-bottom: 30px;
+    
 }
 }
 /* Intro Form */
@@ -163,7 +161,7 @@ a:focus {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 30px;
-  margin-top: 0px;
+  
 }
 
 .intro-form input {
@@ -173,10 +171,12 @@ a:focus {
 }
 
 .intro-form .form-group:last-of-type {
-  margin-bottom: 0;
+  
 }
 
 .intro {
+  margin-top: 30px;
+
   display: table;
   width: 100%;
   height: 100%;
@@ -184,12 +184,7 @@ a:focus {
   color: black;
 /*  background-color: white;*/
   /*background: url(../img/abstract.jpg) no-repeat;*/
-  background-size: cover;
-
-
-
-  background-size: cover;
-  -o-background-size: cover;
+ 
 }
 .intro .intro-body {
   display: table-cell;
@@ -202,7 +197,7 @@ a:focus {
 @media (min-width: 768px) {
   .intro {
     height: 100%;
-    padding: 0;
+ 
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
@@ -294,6 +289,13 @@ color:white
     position: relative; /* Declared position allows for location changes */
     top: -35px; /* Moves the image 2px closer to the top of the page */
 }
+.underline-everything {
+    position: relative; 
+    margin-bottom: 50px;
+    margin-top: 50px; 
+    width: 90%;
+    height: 2px;
+}
 
 
 
@@ -302,6 +304,7 @@ color:white
   width: 70px;
   height: 70px;
   margin-top: 15px;
+  margin-bottom: 30px;
   padding: 7px 16px;
   border: 2px solid black;
   border-radius: 100% !important;
@@ -370,13 +373,13 @@ color:white
   width: 100%;
   color: black;
   background-color: white;
-  margin-bottom: -150px;
+
 
 }
 
 #content-section {
     text-align: center;
-    padding-top: 80px;
+    
 }
 
 #content-section h3 {
@@ -386,44 +389,28 @@ color:white
     font-size: 15px;
     line-height: 1.6em;
     margin-top:-15px;
-     margin-bottom: -150px;
+     
 }
 
 .about-section {
 text-align: center;
-    padding-top: 80px;
-     margin-bottom: -150px;
+    
+    
 }
 
 .about-section .brand-heading {
     font-size: 80px;
     color: black;
   }
-  #map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
-}
-@media (min-width: 767px) {
-  .content-section {
-    
-  }
-
-  #map {
-    height: 400px;
-    margin-top: 250px;
-  }
-}
+ 
 
 .download-section {
-  margin-top: -50px;
+  
   width: 100%;
   color: black;
-
   background-color: white;
   /*background: url(../img/abstract.jpg); */
-  background-size: cover;
-  -o-background-size: cover;
+
 }
 
 .download-section  .fa {
@@ -431,23 +418,7 @@ text-align: center;
     font-size: 100px;
     padding-bottom: 40px
 }
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
-}
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
-  }
-}
+
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -474,13 +445,13 @@ ul.banner-social-buttons {
 }
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
-    margin-top: 15px;
+  
   }
 }
 @media (max-width: 767px) {
   ul.banner-social-buttons li {
     display: block;
-    margin-bottom: 20px;
+    
     padding: 0;
   }
   ul.banner-social-buttons li:last-child {
@@ -526,8 +497,8 @@ body {
 
 #divider {
     text-align: center;
-    padding-top: 80px;
-    margin-bottom: -150px;
+  padding-top: 50px;
+
     
 }
 #divider .fa {
@@ -554,7 +525,7 @@ video {
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 782px;
+   
     width: auto;
     height: 782px;
     z-index: -1000;
@@ -596,6 +567,10 @@ video {
     #bgvid {
     display: none;
 }
+#intro {
+     background: url(../img/abstract.jpg) no-repeat;
+    background-size: cover;
+}
 }
 
 
@@ -614,8 +589,8 @@ video {
   padding: 10px;
   border-radius: 5px;
   border: 3px solid #EAE7E7;
-  width: 400px;
-  top: 10px;
+  width: 60%;
+  
 }
 
 .contact-form h3{
@@ -623,8 +598,8 @@ video {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 0px;
+
+ 
 }
 
 .contact-form input {
