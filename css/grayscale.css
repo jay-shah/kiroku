@@ -57,7 +57,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+ 
 }
 .light {
   font-weight: 400;
@@ -207,13 +207,14 @@ a:focus {
   .this-title-h1{
 
     font-size: 80px;
+    color: black;
   }
 
  .this-title-h2 {
 
     font-size: 60px;
+     color: black;
   }
-
 
 
   .intro .intro-body .intro-text {
@@ -611,6 +612,4 @@ video {
 .contact-form .form-group:last-of-type {
   margin-bottom: 0;
 }
-
-
 
