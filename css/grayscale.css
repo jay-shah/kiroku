@@ -285,6 +285,7 @@ color:white
     position: relative; /* Declared position allows for location changes */
     top: -35px; /* Moves the image 2px closer to the top of the page */
 }
+
 .underline-everything {
     position: relative; 
     margin-bottom: 50px;
@@ -292,8 +293,6 @@ color:white
     width: 90%;
     height: 2px;
 }
-
-
 
 
 .btn-circle {
@@ -579,7 +578,6 @@ video {
     
 
 }
-
 
 
 .contact-form {
