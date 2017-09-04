@@ -242,7 +242,7 @@ a:focus, a:hover {
     color: #000;
     background: rgba(255, 255, 255, .1);
 }
-.download-section, .work-section {
+.download-section{
     width: 100%;
     background-color: #fff;
     /*color: #000;*/
@@ -294,6 +294,10 @@ a:focus, a:hover {
     line-height: 1.6em;
     margin-top: -15px;
 }
+
+
+
+
 .about-section .brand-heading {
     font-size: 80px;
     color: #000;
@@ -310,9 +314,21 @@ a:focus, a:hover {
     border-radius: 0;
 }*/
 
-.about-section{
-  height: 100vh;
+
+
+.video-section{
+    text-align: center;
+    
 }
+.video-section h3 {
+    font-size: 19px;
+}
+.video-section p {
+    font-size: 15px;
+    line-height: 1.6em;
+    margin-top: -15px;
+}
+
 .btn-default {
     border: 1px solid #42DCA3;
     color: #42DCA3;
