@@ -1,57 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Kiroku</title>
 
-  <title> Kiroku</title>
+  <meta property="og:title" content="Kiroku - Clinical note taking" />
+  <meta property="og:type" content="website" />
 
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
-    rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"
-    type="text/css">
-
-  <!-- Theme CSS -->
-  <link href="css/grayscale.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/bootstrap-social.css" rel="stylesheet">
-
-
-  <style type="text/css">
-    #mc_embed_signup {
-      background: #fff;
-      clear: left;
-      font: 14px Helvetica, Arial, sans-serif;
-    }
-
-    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  </style>
-  <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet"
-    type="text/css">
-
-
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Product+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/global/bootstrap.min.css">
+  <link rel="stylesheet" href="css/global/plugins/icon-font.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <script type="text/javascript">
     window.$crisp = [];
@@ -65,430 +30,532 @@
     })();
   </script>
 
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script',
-      'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-99306854-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body class="overflow-hidden">
+  <header id="home">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top">
-
-          <img class='small-logo' src="img/Kiroku-black.png">
-
-          <!-- <i class="fa fa-hand-spock-o"></i> <span class="light">KIROKU</span> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/kiroku-black-cropped.png" alt="image" class="small-logo">
+          <!-- <h3 class="gradient-mask">Kiroku</h3> -->
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav"
+          aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav text-sm-left ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#benefits">Benefits</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#press">Press</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#techblog">Tech Blog</a>
+            </li> -->
+            <li class="nav-item text-center">
+              <a href="#signup" class="btn align-middle btn-primary my-2 my-lg-0">Free Trial</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#intro">Home</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#more">How It Works</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#how">Video Demo</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#team">Team</a>
-          </li>
-          <li>
-            <a class="fa fa-2x fa-facebook" href='https://www.facebook.com/Kiroku-1433102980114884/'
-              target="_blank"></a>
-          </li>
-          <li>
-            <a class="fa fa-2x fa-linkedin" href='https://uk.linkedin.com/company/kiroku' target='_blank'></a>
-          </li>
+    </nav>
 
 
+    <section class="jumbotron-two">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5">
+            <!-- <h1 class="display-5">KIROKU</h1> -->
+            <img src="images/kiroku-black-cropped.png" alt="image" class="big-logo">
+            <p class="text-muted home-text">
+              Our technology can listen to a conversation between a dentist and a patient during
+              a dental appointment and automatically generate the clinical notes.
+            </p>
 
-
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-
-  <!--
-
-    <!-- Intro Header -->
-
-  <header class="intro" id="intro">
-    <div class="intro-body">
-
-      <video id="bgvid" playsinline autoplay muted loop>
-        <source src="img/vid.mp4" type="video/mp4">
-      </video>
-      <div class="overlay">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <br>
-              <br>
-              <br>
-              <br>
-              <img class='big-logo' src="img/Kiroku-black.png">
-
-              <p class="intro-text"> Never write clinical notes again.</p>
-
-              <br>
-
-              <button class="demo-button" data-toggle="modal" data-target="#myModal">Become a Beta Tester</button>
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-
-                    <div class="modal-body">
-
-                      <!-- Begin MailChimp Signup Form -->
-
-                      <!-- Begin MailChimp Signup Form -->
-
-                      <div id="mc_embed_signup">
-                        <form action="//trykiroku.us16.list-manage.com/subscribe/post?u=96c14351ca3be8b6eae394fd9&amp;id=597f3e5a5a"
-                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                          class="validate" target="_blank" novalidate>
-                          <div id="mc_embed_signup_scroll">
-
-                            <p>
-                              Please leave your details below and we will send you an email with our updates and
-                              information on how you can become a beta tester for
-                              free! You can view our privacy policy
-                              <a href="data/privacyPolicy.pdf" target="_blank">
-
-                                <u>here</u>
-                              </a>
-                            </p>
-
-                            <div class="mc-field-group">
-                              <label for="mce-FNAME">First Name </label>
-                              <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-                            </div>
-                            <div class="mc-field-group">
-                              <label for="mce-LNAME">Last Name </label>
-                              <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-                            </div>
-                            <div class="mc-field-group">
-                              <label for="mce-EMAIL">Email Address </label>
-                              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                            </div>
-                            <div class="mc-field-group size1of2">
-                              <label for="mce-MMERGE4">Phone Number </label>
-                              <input type="text" name="MMERGE4" class="required" value="" id="mce-MMERGE4">
-                            </div>
-                            <div class="mc-field-group">
-                              <label for="mce-MMERGE3">Country </label>
-                              <input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3">
-                            </div>
-                            <div id="mce-responses" class="clear">
-                              <div class="response" id="mce-error-response" style="display:none"></div>
-                              <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                              <input type="text" name="b_96c14351ca3be8b6eae394fd9_597f3e5a5a" tabindex="-1" value="">
-                            </div>
-                            <div class="clear">
-                              <input type="submit" value="Become a Beta Tester" name="subscribe" id="mc-embedded-subscribe"
-                                class="demo-button">
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-
-                      <!--End mc_embed_signup-->
-
-
-                    </div>
-                  </div>
-                </div>
+            <p>
+              <a href="#signup" class="btn btn-xl btn-primary">free trial</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-7 my-3 my-md-lg">
+            <div class="youtube cast-shadow" data-video-id="xXNWGBO14rM" data-params="modestbranding=1&amp;showinfo=0&amp;controls=1&amp;vq=hd720">
+              <img src="images/video-image.png" alt="image" class="img-fluid">
+              <div class="play">
+                <img src="images/youtube-icon.png" alt="image" class="img-fluid">
               </div>
-
-              <br />
-              <br/>
-
-              <a href="#more" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <div class="bg-shape"></div>
+    <div class="bg-circle"></div>
+    <div class="bg-circle-two"></div>
   </header>
 
-  <!-- About Section -->
-  <section id="more" class="about-section text-center">
-
-    <div class="about-section">
-      <img src="img/banner-seperator.png" class="underline-everything" alt="underline">
-      <div class="container">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2 class="this-title-h2"> How it works </h2>
-          <img src="img/banner-seperator.png" class="underline-title" alt="underline" style="width:300px;height:3px;">
-          <br>
-          <br>
-          <p>Kiroku is Japanese for
-            <i>"to document, to record or to take minutes of"</i>.</p>
-
-          <p>Our sophisticated natural language system can pick up context in a conversation
-            between you and the patient and automatically write your clinical notes
-            for you.
-
-            <p>Kiroku knows what is relevant and what is irrelevant. It can integrate
-              seamlessly into your work flow, and we can have you up and running
-              in 5 minutes. </p>
-
-            <p>We are currently trialling the product to a closed group of beta testers.
-              If you want to join our waiting list or learn more, please click below.</p>
-            <button class="demo-button" data-toggle="modal" data-target="#myModal">Become a Beta Tester</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="how" class="video-section text-center">
-    <img src="img/banner-seperator.png" class="underline-everything" alt="underline">
-    <div class="work-section">
-      <div class="container">
-        <div class="row">
-          <h2 class="this-title-h2">Video Demo</h2>
-          <img src="img/banner-seperator.png" class="underline-title" alt="underline" style="width:300px;height:3px;">
-          <div row>
-            <div class="wrapper">
-              <div class="h_iframe">
-                <iframe height="2" width="2" src="https://www.youtube.com/embed/xXNWGBO14rM" frameborder="4"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 col-lg-offset-2">
-            <br>
-
-            <button class="demo-button" data-toggle="modal" data-target="#myModal">Become a Beta Tester</button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="divider" style="background-color: white;">
-    <img src="img/banner-seperator.png" class="underline-everything" alt="underline">
-    <br>
+  <!-- <div class="section" id="intro">
     <div class="container">
-      <div class="row">
-        <div class="container threecols">
-          <div class="row">
-            <div class="col-md-4 wow templatemo-box" data-wow-delay="0.3s">
-              <i class="fa fa-microphone"></i>
-              <h3 class="text-uppercase">Voice Recognition</h3>
-              <p>State of the art voice recognition to understand the setting of the
-                conversation.
-              </p>
-            </div>
-
-            <div class="col-md-4 wow templatemo-box animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
-              <i class="fa fa-language"></i>
-              <h3 class="text-uppercase">Language Processing</h3>
-              <p>Interpreting conversations & extracting segments into clinical notes.</p>
-            </div>
-            <div class="col-md-4 wow  templatemo-box" data-wow-delay="0.3s">
-              <i class="fa fa-line-chart "></i>
-              <h3 class="text-uppercase">Machine Learning</h3>
-              <p>Using AI algorithms to personalise content over time.</p>
-            </div>
-
-          </div>
-
-          <br/>
-          <div class="col-md-4 wow templatemo-box" data-wow-delay="0.3s">
-            <i class="fa fa-plug"></i>
-            <h3 class="text-uppercase">Seamless Integration</h3>
-            <p>An effortless switch to increase efficiency & convenience.</p>
-          </div>
-          <div class="col-md-4 wow templatemo-box animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
-            <i class="fa fa-clock-o"></i>
-            <h3 class="text-uppercase">Real Time</h3>
-            <p>The notes will be generated by the end of each consultation.</p>
-          </div>
-
-          <div class="col-md-4 wow  templatemo-box animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
-            <i class="fa fa-puzzle-piece"></i>
-            <h3 class="text-uppercase">Context Understanding</h3>
-            <p>Our smart AI can grasp different forms of language.</p>
-          </div>
-        </div>
+      <div class="client-logos text-center">
+        <p class="text-muted">BACKED BY</p>
+        <img src="images/client_logo_2.png" alt="client logo" />
       </div>
     </div>
-    </div>
-  </section>
+  </div> -->
 
-
-
-  <!-- Team Section -->
-
-  <section id="team" class="text-center">
-    <img src="img/banner-seperator.png" class="underline-everything" alt="underline">
-    <div class="download-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <h2 class="this-title-h2">Team</h2>
-            <img src="img/banner-seperator.png" class="underline-title" alt="underline" style="width: 100px;height:3px;">
-            <div class="container twocols">
-              <div class="row">
-
-                <div class="col-md-4 wow templatemo-box animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
-
-                  <img src="img/hannah.jpg" class="team-pics" alt="underline" style="width:170px;height:170px;">
-                  <br>
-                  <br>
-                  <h3 class="text-uppercase">Hannah Burrow</h3>
-                  <p>Co-founder & CEO
-                    <br>
-                    <br> Hannah is a qualified dentist who has worked in practice, hospitals
-                    and public health. She finds taking notes to be incredibly boring.</p>
-                  <a class="btn btn-lg btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/hannahburrow/"
-                    target="_blank">
-                    <span class="fa fa-linkedin"></span>
-                  </a>
-                  <br>
-                </div>
-
-
-                <div class="col-md-4 wow templatemo-box animated">
-
-                </div>
-
-                <div class="col-md-4 wow templatemo-box" data-wow-delay="0.3s">
-                  <img src="img/jay.jpg" class="team-pics" alt="underline" style="width:170px;height:170px;">
-                  <br>
-
-                  <br>
-                  <h3 class="text-uppercase">Jay Shah </h3>
-
-
-                  <p>Co-founder & CTO
-                    <br>
-                    <br> Jay has a MPhil from University of Cambridge and has spent a
-                    number of years in Natural Language Processing research.</p>
-
-                  <a class="btn btn-lg btn-social-icon btn-linkedin btn-margin" href="https://www.linkedin.com/in/jayshah14/"
-                    target="_blank">
-
-                    <span class="fa fa-linkedin"></span>
-                  </a>
-                  <br>
-                </div>
-
-
+  <div class="section bg-light pt-lg" id="benefits">
+    <div class="container">
+      <div class="section-title text-center mt-0 mb-5">
+        <h1>BENEFITS.</h1>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="media mb-5">
+            <div class="media-body">
+              <div class="media-icon mb-4">
+                <i class="fas fa-users fa-3x"></i>
+              </div>
+              <h5 class="mt-0 mb-3 ">More Patients</h5>
+              <div class="mr-3 ml-3">
+                Clinical note taking can take up to 25% of a dentists time.
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media mb-5">
+            <div class="media-body">
+              <div class="media-icon mb-4">
+                <i class="fas fa-gavel fa-3x"></i>
+              </div>
+              <h5 class="mt-0 mb-3 ">Better Legal Protection</h5>
+              <div class="mr-3 ml-3">
+                With extra help on your notes you can provie more detail.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media mb-5">
+            <div class="media-body">
+              <div class="media-icon mb-4">
+                <i class="fas fa-clock fa-3x"></i>
+              </div>
+              <h5 class="mt-0 mb-3 ">Get Home Early</h5>
+              <div class="mr-3 ml-3">
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-
-
-
-  <section id="press" class="pad-xs text-center">
-    <img src="img/banner-seperator.png" class="underline-everything" alt="underline">
+  <!-- <div class="section" id="features">
     <div class="container">
-
-      <div class="row margin-30">
-        <h3 class="text-center">Supported by</h3>
+      <div class="section-title text-center mt-0 mb-5">
+        <h1>FEATURES.</h1>
       </div>
+      <h1>In progress</h1>
+      <div class="card card-no-border"> -->
+  <!--   <div class="card-header card-header-features"> -->
+  <!--     <ul class="nav  nav-fill card-header-tabs" id="featureNav" role="tablist"> -->
+  <!--       <li class="nav-item"> -->
+  <!--         <a class="nav-link nav-link-features active" data-toggle="tab" data-target="#techUsed" -->
+  <!--           href="#">Tech Used</a> -->
+  <!--       </li> -->
+  <!--       <li class="nav-item"> -->
+  <!--         <a class="nav-link nav-link-features" data-toggle="tab" data-target="#placeholder" -->
+  <!--           href="#">placeholder</a> -->
+  <!--       </li> -->
+  <!--       <li class="nav-item "> -->
+  <!--         <a class="nav-link nav-link-features" data-toggle="tab" data-target="#placeholder2" -->
+  <!--           href="#">placeholder2</a> -->
+  <!--       </li> -->
+  <!--       <li class="nav-item"> -->
+  <!--         <a class="nav-link nav-link-features" data-toggle="tab" data-target="#placeholder3" -->
+  <!--           href="#">placeholder3</a> -->
+  <!--       </li> -->
+  <!--     </ul> -->
+  <!--   </div> -->
 
+  <!--   <div class="tab-content"> -->
+  <!--     <div class="tab-pane active" id="techUsed" role="tabpanel"> -->
+  <!--       <div class="card thing" style="width: 30rem;"> -->
+  <!--         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
+  <!--         <div class="card-block"> -->
+  <!--           <h3 class="card-title">Special title treatment</h3> -->
+  <!--           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+  <!--           <1!-- <a href="#" class="btn btn-primary">Go somewhere</a> --1> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="tab-pane" id="placeholder" role="tabpanel"> -->
+  <!--       <div class="card thing" style="width: 30rem;"> -->
+  <!--         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
+  <!--         <div class="card-block"> -->
+  <!--           <h3 class="card-title">Special title treatment</h3> -->
+  <!--           <p class="card-text">Some quick example text to build on the card title and make up the -->
+  <!--             bulk of the card's content.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="tab-pane" id="placeholder2" role="tabpanel"> -->
+  <!--       <div class="card thing" style="width: 30rem;"> -->
+  <!--         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
+  <!--         <div class="card-block"> -->
+  <!--           <h3 class="card-title">Special title treatment</h3> -->
+  <!--           <p class="card-text">Some quick example text to build on the card title and make up the -->
+  <!--             bulk of the card's content.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="tab-pane" id="placeholder3" role="tabpanel"> -->
+  <!--       <div class="card thing" style="width: 30rem;"> -->
+  <!--         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"> -->
+  <!--         <div class="card-block"> -->
+  <!--           <h3 class="card-title">Special title treatment</h3> -->
+  <!--           <p class="card-text">Some quick example text to build on the card title and make up the -->
+  <!--             bulk of the card's content.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!-- </div>
+  </div> -->
+
+  <div class="section bg-light py-lg" id="team">
+    <div class="container">
+      <div class="section-title text-center">
+        <h1>WHO ARE WE?</h1>
+        <p>Meet the team</p>
+      </div>
+      <div class="card-deck">
+
+
+        <!-- HANNAH BURROW -->
+        <div class="card pricing ">
+          <img class="card-img-top team-image" src="images/hannah.jpg" alt="Card image cap">
+          <div class="card-block ">
+            <h4 class="card-title pt-4">Hannah Burrow</h4>
+            <p class="card-text company-title-text ">CEO & Co-founder</p>
+            <p class="card-text text-center mt-2 mb-2">
+              <small class="text-muted">Joined: May 2017 </small>
+            </p>
+          </div>
+          <div class="hover-team d-flex flex-column">
+            <h4 class="card-title text-center mt-4 mb-0 pb-0">Hannah Burrow</h4>
+            <img class="card-image-hover mt-0 pt-0" src="images/hannah-bm.jpg" alt="Card image cap">
+            <p class="hover-card-text ml-2 mr-2 mt-3 ">
+              Hannah is a qualified dentist who has worked in practice, hospitals and public health.
+              She finds taking notes to be incredibly boring.
+            </p>
+            <a href="https://uk.linkedin.com/in/hannahburrow" target="_blank" class="btn btn-xl btn-outline-primary mt-auto mr-4 ml-4  mb-4">See More</a>
+          </div>
+        </div>
+
+        <!-- JAY SHAH  -->
+        <div class="card pricing ">
+          <img class="card-img-top team-image" src="images/jay.jpg" alt="Card image cap">
+          <div class="card-block ">
+            <h4 class="card-title pt-4">Jay Shah</h4>
+            <p class="card-text company-title-text ">CTO & Co-founder</p>
+            <p class="card-text text-center mt-2 mb-2">
+              <small class="text-muted">Joined: May 2017 </small>
+            </p>
+          </div>
+          <div class="hover-team d-flex flex-column">
+            <h4 class="card-title text-center mt-4 mb-0 pb-0">Jay Shah</h4>
+            <img class="card-image-hover mt-0 pt-0" src="images/jay-bm.jpeg" alt="Card image cap">
+            <p class="hover-card-text ml-2 mr-2 mt-3 ">
+              Jay has a MPhil from University of Cambridge and has spent a number of years in Natural
+              Language Processing research.
+            </p>
+            <a href="https://www.linkedin.com/in/jayshah14/" target="_blank" class="btn btn-xl btn-outline-primary mt-auto mr-4 ml-4  mb-4">See More</a>
+          </div>
+        </div>
+
+        <!-- ALAN WILLIAMS -->
+        <div class="card pricing ">
+          <img class="card-img-top team-image" src="images/alan.jpeg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title pt-4">Alan Williams</h4>
+            <p class="card-text company-title-text ">Full Stack Developer</p>
+            <p class="card-text text-center mt-2 mb-2">
+              <small class="text-muted">Joined: April 2018 </small>
+            </p>
+          </div>
+          <div class="hover-team d-flex flex-column">
+            <h4 class="card-title text-center mt-4 mb-0 pb-0">Alan Williams</h4>
+            <img class="card-image-hover mt-0 pt-0" src="images/alan-bm.jpeg" alt="Card image cap">
+            <p class="hover-card-text ml-2 mr-2 mt-3 ">
+              Alan has over 6 years software development experience and loves...
+            </p>
+            <a href="https://www.linkedin.com/in/alanwilliam5/" target="_blank" class="btn btn-xl btn-outline-primary mt-auto mr-4 ml-4  mb-4">See More</a>
+          </div>
+        </div>
+
+        <!-- DANIEL WATSON -->
+        <div class="card pricing">
+          <img class="card-img-top team-image" src="images/daniel.jpg" alt="Card image cap">
+          <div class="card-block ">
+            <h4 class="card-title pt-4 ">Daniek Watson</h4>
+            <p class="card-text company-title-text ">Machine Learning Intern</p>
+            <p class="card-text text-center mt-2 mb-2 ">
+              <small class="text-muted ">Joined: June 2018 </small>
+            </p>
+          </div>
+          <div class="hover-team  d-flex flex-column">
+            <h4 class="card-title text-center mt-4 mb-0 pb-0 ">Daniel Watson</h4>
+            <img class="card-image-hover mt-0 pt-0 " src="images/daniel-bm.jpeg
+            " alt="Card image cap ">
+            <p class="hover-card-text ml-2 mr-2 mt-3 "> Daniel..</p>
+            <a href="https://www.linkedin.com/in/danielwatson6/ " target="_blank
+            " class="btn btn-xl btn-outline-primary mt-auto mr-4 ml-4  mb-4">See More</a>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section " id="press ">
+    <div class="container ">
+      <div class="section-title text-center ">
+        <h1>PRESS.</h1>
+        <p>the latest press about the beloved Kiroku</p>
+      </div>
       <div class="row">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-          <img class="center-block" src="img/entrepreneur_first_honeybadger.jpg" alt="Entrepreneur First"
-            style="max-width: 150px; max-height: 150px;">
-        </div>
-        <div class="col-sm-4">
+        <div class="card-deck">
+          <div class="card press-card" style="width: 18rem;">
+            <img class="card-img-top" src="images/hannah-kiroku-small.png" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Disrupting dentistry</h5>
+              <p class="card-text">Hannah presents Kiroku and discusses how the platform captures the
+                value of expert conversation whilst automating clinicial note taking</p>
+              <div class="mt-auto">
+                <a href="https://www.youtube.com/watch?v=qh8Vpd-opbE" class="press-card-btn btn btn-xl btn-primary"
+                  target="_blank">Watch Now</a>
+                <img class="podcast" src="images/entrepreneur-first-kiroku-150.png">
+              </div>
+            </div>
+          </div>
+          <div class="card press-card" style="width: 18rem;">
+            <img class="card-img-top" src="images/telegraph-kiroku-small.png" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Innovation in emerging markets</h5>
+              <p class="card-text">Hannah presents Kiroku and discusses how the platform aids dentists
+                with annotating clinical notes</p>
+              <div class="mt-auto">
+                <a href="https://www.telegraph.co.uk/connect/small-business/launching-data-intelligence-security-company/"
+                  class="press-card-btn btn btn-xl btn-primary" target="_blank">Read more</a>
+                <img class="podcast" src="images/telegraph-150.png">
+              </div>
+            </div>
+          </div>
+          <div class="card press-card" style="width: 18rem;">
+            <img class="card-img-top" src="images/pitch-palace-kiroku-small.png" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pitch@Palace 9.0</h5>
+              <p class="card-text">The Duke of York announces Kiroku as runner up from a formidable group
+                of 42 entrepreneurs</p>
+              <div class="mt-auto">
+                <a href="http://pitchatpalace.com/pitchpalace-9-0-the-results/" class="press-card-btn btn btn-xl btn-primary"
+                  target="_blank">Read more</a>
+                <img class="podcast" src="images/pitch-palace-150.png">
+              </div>
+            </div>
+          </div>
+          <div class="card press-card" style="width: 18rem;">
+            <img class="card-img-top" src="images/ef-kiroku-small.png" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Kiroku pitch @ EF</h5>
+              <p class="card-text">Kiroku secures funding and initial support from EF after an engaging
+                prestation of an impressive product</p>
+              <div class="mt-auto">
+                <a href="https://techcrunch.com/2017/09/15/ef8/" class="press-card-btn btn btn-xl btn-primary"
+                  target="_blank">Read more</a>
+                <img class="podcast" src="images/TechCrunch-Logo-150.png">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
 
 
-      <div class="row news-container text-center">
-        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 wow fadeInLeft" data-wow-delay="0.8s"
-          style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-          <br>
-          <p class="contact text-center">Entrepreneur First creates deep tech startups from scratch.
-            <br>
+  <!-- <div class="section bg-light py-lg " id="techblog ">
+    <div class="container ">
+      <div class="section-title text-center mt-0 mb-5 ">
+        <h1>TECH BLOG.</h1>
+        <p>all the tech which drives our amazing platform and what we've learnt...</p>
+        <p>plus all our little rants and interesting, related content</p>
+      </div>
+      <div class="row">
+        <h1>In process</h1> -->
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> -->
+  <!--   <ol class="carousel-indicators"> -->
+  <!--     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> -->
+  <!--     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
+  <!--     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+  <!--   </ol> -->
+  <!--   <div class="carousel-inner"> -->
+  <!--     <div class="carousel-item active"> -->
+  <!--       <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="First slide"> -->
+  <!--       <div class="carousel-caption d-none d-md-block"> -->
+  <!--         <h5>...</h5> -->
+  <!--         <p>...</p> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="carousel-item"> -->
+  <!--       <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide"> -->
+  <!--     </div> -->
+  <!--     <div class="carousel-item"> -->
+  <!--       <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide"> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!--   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> -->
+  <!--     <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+  <!--     <span class="sr-only">Previous</span> -->
+  <!--   </a> -->
+  <!--   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> -->
+  <!--     <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+  <!--     <span class="sr-only">Next</span> -->
+  <!--   </a> -->
+  <!-- </div> -->
+  <!-- </div>
+    </div>
+  </div> -->
 
-          </p>
+
+  <div class="section " id="signup">
+    <div class="container ">
+      <div class="section-title text-center ">
+        <h3 class="mb-4">Start your 1 month free trial</h3>
+      </div>
+      <div class="row justify-content-md-center ">
+        <div class="col col-md-5 ">
+
+          <form action="//trykiroku.us16.list-manage.com/subscribe/post?u=96c14351ca3be8b6eae394fd9&amp;id=597f3e5a5a "
+            method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form "
+            class="validate " target="_blank " novalidate>
+
+            <div class="form-group ">
+              <input type="text " class="form-control " placeholder="First Name" value="" name="FNAME"
+                id="mce-FNAME ">
+            </div>
+            <div class="form-group ">
+              <input type="text " class="form-control " placeholder="Last Name
+            " value="" name="LNAME " id="mce-LNAME ">
+            </div>
+            <div class="form-group ">
+              <input type="email " class="form-control " placeholder="Email Address
+            " value="" name="EMAIL " id="mce-EMAIL ">
+            </div>
+            <div class="form-group ">
+              <input type="text " class="form-control " placeholder="Phone Number
+            " name="MMERGE4 " class="required " value="" id="mce-MMERGE4 ">
+            </div>
+            <div class="form-group ">
+              <input type="text " class="form-control " placeholder="Country ">
+            </div>
+            <div class="form-group ">
+              <button type="submit " id="mc-embedded-subscribe " class="btn btn-xl
+            btn-block btn-primary ">GET A FREE TRIAL</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bg-light mt-4" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="media-icons col-md-6 text-center">
+          <a href="https://en-gb.facebook.com/trykiroku/" taget="_blank">
+            <img class="media-icons" src="http://simpleicon.com/wp-content/uploads/facebook-2.png">
+          </a>
+          <a href="https://twitter.com/trykiroku?lang=en" taget="_blank">
+            <img class="media-icons" src="http://simpleicon.com/wp-content/uploads/twitter-2.png">
+          </a>
+          <a href="https://www.linkedin.com/company/kiroku" taget="_blank">
+            <img class="media-icons" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png">
+          </a>
+        </div>
+        <div class="col-md-3 "></div>
+      </div>
+      <div class="row ">
+        <div class="col-md-3 ">
+        </div>
+
+        <!-- <div class="col-md-3"> -->
+        <!--   <ul class="list-unstyled footer-links ml-1 "> -->
+        <!--     <li> -->
+        <!--       <a href="#about ">About us</a> -->
+        <!--     </li> -->
+        <!--     <li> -->
+        <!--       <a href="#services ">Services</a> -->
+        <!--     </li> -->
+        <!--     <li> -->
+        <!--       <a href="#contact ">Contact</a> -->
+        <!--     </li> -->
+        <!--   </ul> -->
+        <!-- </div> -->
+
+        <div class="col-md-5">
+          <ul class="list-unstyled footer-links ml-1 ">
+            <li>
+              <a href="# ">Terms</a>
+            </li>
+            <li>
+              <a href="#about ">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <a href="#home" class="btn btn-sm btn-outline-primary ml-1">Go to Top</a>
         </div>
 
       </div>
 
+      <div class="text-center mt-4">
+        <small class="cc-right text-muted">Copyright ©
+          <script type="text/javascript ">
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved. Kiroku
+        </small>
+      </div>
     </div>
-    <img src="img/banner-seperator.png" class="underline-everything" alt="underline">
 
-  </section>
+  </div>
 
 
-  <!-- Footer -->
-  <footer>
 
-    <div class="container text-center">
 
-      <p>Copyright &copy; Kiroku 2017</p>
-    </div>
-  </footer>
 
-  <!-- jQuery -->
-  <script src="vendor/jquery/jquery.js"></script>
+  <script src="js/global/jquery-3.2.1.min.js "></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="js/global/bootstrap.bundle.min.js "></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-  <!-- Theme JavaScript -->
-  <script src="js/grayscale.js"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script> -->
+  <script src="js/script.js "></script>
 
   <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
   <script type='text/javascript'>
@@ -508,10 +575,12 @@
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
   </script>
-  <!--End mc_embed_signup-->
 
-
-
+  <script src="js/global/bootstrap.bundle.min.js "></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js
+            " integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9 "
+    crossorigin="anonymous "></script>
+  <script src="js/script.js "></script>
 
 </body>
 
