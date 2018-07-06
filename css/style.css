@@ -1045,7 +1045,7 @@ iframe {
 }
 
 .press-card-btn:focus {
-    box-shadow: 0 0 0 0.0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0.0 rgba(0, 0, 0, 0);
     background-color: #232323;
 }
 
@@ -1269,6 +1269,8 @@ a.title:hover img {
 
 .team-image {
     transition: .5s ease;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .hover-team {
@@ -1285,7 +1287,7 @@ a.title:hover img {
     opacity: 0;
 }
 
-.card:hover .card-block {
+.card:hover .card-team {
     opacity: 0;
 }
 
