@@ -1003,9 +1003,27 @@ iframe {
     flex: 1;
 }
 
+.blog-carousel {
+    width: 500px;
+}
+
 .media-icons {
     padding-bottom: 25px;
     opacity: 0.5;
+}
+
+.blog-carousel-arrows {
+    padding-top: 15px;
+}
+
+.left-carousel-arrow {
+    margin-right: 40px;
+    color: black;
+}
+
+.right-carousel-arrow {
+    margin-left: 40px;
+    color: black;
 }
 
 .thing,
@@ -1026,6 +1044,32 @@ iframe {
     border-radius: 15px;
     text-align: center;
 }
+
+.press-card-carousel h5 {
+    color: #222831 !important;
+}
+
+.press-card-carousel p {
+    color: #393e46 !important;
+}
+
+.press-card-carousel a.press-card-btn {
+    color: #eeeeee !important;
+    border: 1px solid #00adb5; 
+    background-color: #00adb5;
+}
+
+.press-card-carousel a.press-card-btn:hover {
+    color: #ffffff !important;
+    border: 1px solid #17bebb; 
+    background-color: #17bebb;
+    -webkit-box-shadow: 5px 5px 6px rgb(226, 226, 226) !important;
+    box-shadow: 5px 5px 6px rgb(226, 226, 226) !important;
+}
+
+/* .press-card-carousel div.press-card { */
+/*     background-color: #eeeeee; */
+/* } */
 
 .press-card:hover {
     margin-top: 0px !important;
