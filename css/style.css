@@ -1318,3 +1318,8 @@ a.title:hover img {
 .features-heading {
     color: rgba(0, 0, 0, .5) !important
 }
+
+.features-logo {
+    width: 40%;
+    height: auto;
+}
