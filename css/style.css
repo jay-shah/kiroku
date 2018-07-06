@@ -1256,6 +1256,11 @@ a.title:hover img {
     height: auto;
 }
 
+.workflow-image {
+    width: 100%;
+    height: auto;
+}
+
 .home-text {
     margin-top: 1rem !important;
     margin-bottom: 2rem !important;
@@ -1308,4 +1313,8 @@ a.title:hover img {
     width: 50%;
     height: auto;
     align-self: center;
+}
+
+.features-heading {
+    color: rgba(0, 0, 0, .5) !important
 }
