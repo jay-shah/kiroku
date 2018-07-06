@@ -1025,6 +1025,8 @@ iframe {
     border: 0;
     border-radius: 15px;
     text-align: center;
+    margin-right: 15px;
+    margin-left: 15px
 }
 
 .press-card:hover {
