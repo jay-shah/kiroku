@@ -1025,8 +1025,6 @@ iframe {
     border: 0;
     border-radius: 15px;
     text-align: center;
-    margin-right: 15px;
-    margin-left: 15px
 }
 
 .press-card:hover {
@@ -1256,11 +1254,6 @@ a.title:hover img {
     height: auto;
 }
 
-.workflow-image {
-    width: 100%;
-    height: auto;
-}
-
 .home-text {
     margin-top: 1rem !important;
     margin-bottom: 2rem !important;
@@ -1274,8 +1267,8 @@ a.title:hover img {
 
 .team-image {
     transition: .5s ease;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(30%);
+    filter: grayscale(30%);
 }
 
 .hover-team {
@@ -1321,5 +1314,10 @@ a.title:hover img {
 
 .features-logo {
     width: 40%;
+    height: auto;
+}
+
+.workflow-image {
+    width: 100%;
     height: auto;
 }
