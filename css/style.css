@@ -630,6 +630,7 @@ header {
     -o-transition: all .3s ease;
     transition: all .3s ease;
     padding: 1rem;
+    top: 0;
     position: fixed;
     width: 100%;
     z-index: 500
