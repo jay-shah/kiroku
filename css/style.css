@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
     position: relative;
     color: #1D2137
@@ -92,7 +93,7 @@ a:active {
 
 .bg-light {
     background-color: #f9f9f9 !important
-    /* background-color: rgba(45, 114, 216, .1) !important; */
+        /* background-color: rgba(45, 114, 216, .1) !important; */
 }
 
 .bg-white {
@@ -286,6 +287,7 @@ a:active {
 .btn-primary:focus:active {
     color: #2D72D8;
     background-color: #FBF9FF;
+    cursor: pointer;
 }
 
 .btn-outline,
@@ -340,6 +342,7 @@ header {
 }
 
 @media(max-width:767px) {
+
     .swiper-button-prev,
     .swiper-button-next {
         display: none
@@ -413,6 +416,7 @@ header {
     .jumbotron {
         padding: 2rem 0
     }
+
     .jumbotron.sub-page {
         padding: 0 0 2rem
     }
@@ -555,6 +559,7 @@ header {
     .display-3 {
         font-size: 4rem
     }
+
     .display-5 {
         font-size: 1.4rem
     }
@@ -564,6 +569,7 @@ header {
     .display-3 {
         font-size: 2.2rem
     }
+
     .display-4 {
         font-size: 2.5rem
     }
@@ -697,6 +703,7 @@ header {
     .navbar-toggleable-md>.container {
         width: 100%
     }
+
     .nav-link {
         padding: .3em .6em
     }
@@ -706,9 +713,11 @@ header {
     body:not(.sticky) .navbar:not(.navbar-light).menu-is-open {
         background: rgba(0, 0, 0, .7)
     }
+
     .navbar-nav {
         margin-bottom: 1em
     }
+
     .navbar-toggleable-md .navbar-nav .dropdown-menu {
         text-align: center
     }
@@ -943,7 +952,7 @@ iframe {
 .media-icons {
     width: 70px;
     height: auto;
-    color: #6F717F
+
 }
 
 .cc-right {
@@ -1402,4 +1411,19 @@ a.title:hover img {
 
 .card-deck-blog {
     height: 45vh !important;
+}
+
+.verticalline {
+    height: 400px !important;
+
+}
+
+@media(max-width:767px) {
+    .verticalline {
+        display: none
+    }
+}
+
+.waitlist-number {
+    color: #FC5157
 }
