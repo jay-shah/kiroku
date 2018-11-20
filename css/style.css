@@ -1427,3 +1427,13 @@ a.title:hover img {
 .waitlist-number {
     color: #FC5157
 }
+
+.video {
+    width: 60%;
+}
+
+@media(max-width:767px) {
+    .video {
+        width: 100%;
+    }
+}
